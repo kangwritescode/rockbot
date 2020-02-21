@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './NowPlaying.css'
 import NowPlayingHeader from '../NowPlayingHeader/NowPlayingHeader'
 
-const NowPlaying = ({ nowPlayingData }) => {
+const NowPlaying = ({ nowPlayingData, queueData }) => {
   const [data, setData] = useState()
 
   useEffect(() => {

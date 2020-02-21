@@ -1,1 +1,35 @@
-/* No CSS *//*# sourceMappingURL=NowPlayingHeader.css.map */
+.nowplayingheader {
+  background: #ffc861;
+  padding: 2rem 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nowplayingheader__img {
+  margin-right: 3rem;
+  border-radius: 1rem;
+}
+
+.nowplayingheader__artist {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.nowplayingheader__song {
+  font-size: 2.8rem;
+}
+
+.nowplayingheader__info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=NowPlayingHeader.css.map */

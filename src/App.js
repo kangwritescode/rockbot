@@ -24,9 +24,7 @@ function App () {
 
   let view = <Spinner />
   if (currentView === 'NOW_PLAYING' && data) {
-    console.log(data)
-
-    view = <NowPlaying nowPlayingData={data.aNowPlaying} />
+    view = <NowPlaying nowPlayingData={data.aNowPlaying} queueData={data.aQueue}/>
   } else if (currentView === 'LEADERBOARD' && data) {
     view = <Leaderboard />
   }

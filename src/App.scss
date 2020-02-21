@@ -1,4 +1,5 @@
 @import './styles/typography.scss';
+@import './styles/typography.scss';
 
 *,
 *::after,
@@ -16,4 +17,5 @@ body {
   box-sizing: border-box;
   color: black;
   font-family: $primaryFont;
+
 }
