@@ -7,6 +7,7 @@ function App () {
   return (
     <React.Fragment>
       <RockHeader />
+      
       <NavBar />
     </React.Fragment>
   )
