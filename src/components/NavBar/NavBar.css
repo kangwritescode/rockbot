@@ -1,1 +1,14 @@
-/* No CSS *//*# sourceMappingURL=NavBar.css.map */
+.navbar {
+  position: absolute;
+  bottom: 0px;
+  border-top: .1rem black solid;
+  width: 100vw;
+  height: 5rem;
+}
+
+.navbar button {
+  width: 50%;
+  height: 100%;
+  font-size: 1.8rem;
+}
+/*# sourceMappingURL=NavBar.css.map */
