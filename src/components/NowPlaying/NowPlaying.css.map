@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAEA,AAAA,WAAW,CAAC;EACR,KAAK,EAAE,KAAK;CACf",
     "sources": [
-        "NowPlaying.scss"
+        "NowPlaying.scss",
+        "../../styles/abstracts.scss"
     ],
     "names": [],
     "file": "NowPlaying.css"

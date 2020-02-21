@@ -14,9 +14,9 @@ function App () {
   // upon mounting
   useEffect(() => {
     function fetchMusicData () {
-      axios
-        .get('https://api.rockbot.com/v2/venue/10')
-        .then(res => setData(res.data))
+      axios.get('https://api.rockbot.com/v2/venue/10').then(({ data }) => {
+        setData(data)
+      })
     }
     fetchMusicData()
     setInterval(fetchMusicData, 30000)
@@ -24,7 +24,9 @@ function App () {
 
   let view = <Spinner />
   if (currentView === 'NOW_PLAYING' && data) {
-    view = <NowPlaying trackData={data} />
+    console.log(data)
+
+    view = <NowPlaying nowPlayingData={data.aNowPlaying} />
   } else if (currentView === 'LEADERBOARD' && data) {
     view = <Leaderboard />
   }
