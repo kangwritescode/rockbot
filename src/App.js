@@ -5,27 +5,27 @@ import NavBar from './components/NavBar/NavBar'
 import NowPlaying from './components/NowPlaying/NowPlaying'
 import Leaderboard from './components/Leaderboard/Leaderboard'
 import axios from 'axios'
+import Spinner from './components/Spinner/Spinner'
 
-function App() {
+function App () {
   const [currentView, setCurrentView] = useState('NOW_PLAYING')
   const [data, setData] = useState()
 
   // upon mounting
   useEffect(() => {
-
-    setInterval(() => {
+    function fetchMusicData () {
       axios
         .get('https://api.rockbot.com/v2/venue/10')
         .then(res => setData(res.data))
-    }, 30000)
-
-    return () => { }
+    }
+    fetchMusicData()
+    setInterval(fetchMusicData, 30000)
   }, [])
 
-  let view;
-  if (currentView === 'NOW_PLAYING') {
-    view = <NowPlaying trackData={data && data.aNowPlaying} />
-  } else {
+  let view = <Spinner />
+  if (currentView === 'NOW_PLAYING' && data) {
+    view = <NowPlaying trackData={data} />
+  } else if (currentView === 'LEADERBOARD' && data) {
     view = <Leaderboard />
   }
   return (
