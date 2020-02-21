@@ -1,11 +1,21 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import './NavBar.css'
 
-const NavBar = props => {
+const NavBar = ({ changeView }) => {
   return (
     <nav className='navbar'>
-      <button className='navbar__now-playing'>Now Playing</button>
-      <button className='navbar__leaderboard'>Leaderboard</button>
+      <button
+        className='navbar__now-playing'
+        onClick={() => changeView('NOW_PLAYING')}
+      >
+        Now Playing
+      </button>
+      <button
+        className='navbar__leaderboard'
+        onClick={() => changeView('LEADERBOARD')}
+      >
+        Leaderboard
+      </button>
     </nav>
   )
 }
