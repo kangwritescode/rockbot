@@ -1,0 +1,13 @@
+@import '../../styles/colors';
+@import '../../styles/abstracts';
+
+.rockheader {
+
+    background-color: $color-primary-2;
+    color: white;
+    min-height: 7vh;
+    font-size: 1.5rem;
+    border-bottom: .1rem solid black;
+
+    @include flex-centered(column);
+}

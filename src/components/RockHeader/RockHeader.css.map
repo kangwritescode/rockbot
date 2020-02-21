@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAGA,AAAA,WAAW,CAAC;EAER,gBAAgB,ECHF,OAAO;EDIrB,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,GAAG;EACf,SAAS,EAAE,MAAM;EACjB,aAAa,EAAE,iBAAiB;EERhC,OAAO,EAAE,IAAI;EACb,cAAc,EFSS,MAAM;EER7B,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;CFQ1B",
     "sources": [
-        "RockHeader.scss"
+        "RockHeader.scss",
+        "../../styles/colors.scss",
+        "../../styles/abstracts.scss"
     ],
     "names": [],
     "file": "RockHeader.css"
